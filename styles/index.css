@@ -8,3 +8,14 @@
 ::after {
     box-sizing: inherit;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.container > div {
+    border: 1px solid black;
+    padding: 4em 4em;
+}
