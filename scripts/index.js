@@ -24,6 +24,21 @@ function renderGrid() {
     array.forEach(cell => {
         container.appendChild(cell);
     });
+
+    changeGridCellColourOnMouseover(array, "red");
+}
+
+/**
+ * Change the colour of a cell when a mouse hovers over it
+ * @param {HTMLElement[]} gridCells Array of grid cells
+ * @param {string} colour The new background colour of the grid cell
+ */
+function changeGridCellColourOnMouseover(gridCells, colour) {
+    gridCells.forEach(cell => {
+        cell.addEventListener("mouseover", () => {
+            cell.style.backgroundColor = colour;
+        });
+    });
 }
 
 renderGrid();
