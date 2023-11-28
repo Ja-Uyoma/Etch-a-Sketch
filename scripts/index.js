@@ -15,11 +15,11 @@ function createGridCells(gridRows, gridColumns) {
 }
 
 function renderGrid() {
-    const gridContainer = document.querySelector("div.container");
+    const container = document.querySelector("div.container");
 
     let array = createGridCells(4, 4);
     array.forEach(cell => {
-        gridContainer.appendChild(cell);
+        container.appendChild(cell);
     });
 }
 
