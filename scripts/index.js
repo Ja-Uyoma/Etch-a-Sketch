@@ -14,6 +14,9 @@ function createGridCells(gridRows, gridColumns) {
     return array;
 }
 
+/**
+ * Render the grid cells to the viewport
+ */
 function renderGrid() {
     const container = document.querySelector("div.container");
 
