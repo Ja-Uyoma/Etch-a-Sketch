@@ -4,7 +4,7 @@
  * @param {number} columnLength The number of columns of the grid
  * @returns An array containing the grid cells
  */
-function createGridOfDivs(rowLength, columnLength) {
+function createGridCells(rowLength, columnLength) {
     let array = [];
 
     for (let i = 0; i < rowLength * columnLength; ++i) {
@@ -17,7 +17,7 @@ function createGridOfDivs(rowLength, columnLength) {
 function renderGrid() {
     const gridContainer = document.querySelector("div.container");
 
-    let array = createGridOfDivs(4, 4);
+    let array = createGridCells(4, 4);
     array.forEach(cell => {
         gridContainer.appendChild(cell);
     });
