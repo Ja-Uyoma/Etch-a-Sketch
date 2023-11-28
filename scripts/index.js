@@ -26,6 +26,7 @@ function renderGrid() {
     });
 
     changeGridCellColourOnMouseover(array, "red");
+    updateYearDynamically();
 }
 
 /**
@@ -39,6 +40,11 @@ function changeGridCellColourOnMouseover(gridCells, colour) {
             cell.style.backgroundColor = colour;
         });
     });
+}
+
+function updateYearDynamically() {
+    const year = new Date().getFullYear().toString();
+    document.querySelector("span.year").textContent = year;
 }
 
 renderGrid();
