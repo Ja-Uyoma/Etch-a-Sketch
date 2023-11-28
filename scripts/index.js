@@ -1,13 +1,13 @@
 /**
  * Create an n x n grid of divs
- * @param {number} rowLength The number of rows of the grid
- * @param {number} columnLength The number of columns of the grid
+ * @param {number} gridRows The number of rows of the grid
+ * @param {number} gridColumns The number of columns of the grid
  * @returns An array containing the grid cells
  */
-function createGridCells(rowLength, columnLength) {
+function createGridCells(gridRows, gridColumns) {
     let array = [];
 
-    for (let i = 0; i < rowLength * columnLength; ++i) {
+    for (let i = 0; i < gridRows * gridColumns; ++i) {
         array.push(document.createElement("div"));
     }
 
