@@ -14,15 +14,13 @@ function createGridOfDivs(rowLength, columnLength) {
     return array;
 }
 
-const body = document.querySelector("body");
+function renderGrid() {
+    const gridContainer = document.querySelector("div.container");
 
-const container = document.createElement("div");
-container.className = "container";
+    let array = createGridOfDivs(4, 4);
+    array.forEach(cell => {
+        gridContainer.appendChild(cell);
+    });
+}
 
-let arrayOfDivs = createGridOfDivs(4, 4);
-
-arrayOfDivs.forEach(elem => {
-    container.appendChild(elem);
-});
-
-body.appendChild(container);
+renderGrid();
