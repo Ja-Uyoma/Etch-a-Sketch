@@ -1,4 +1,4 @@
-import { CreateGrid, RenderGrid } from "./Grid.mjs";
+import { ChangeGridCellBgColourOnMouseOver, CreateGrid, RenderGrid } from "./Grid.mjs";
 
 /**
  * Render a new grid to the DOM with the dimensions given in the prompt
@@ -26,6 +26,8 @@ const HandleButtonClicked = () => {
 
     let container = document.querySelector("div.container");
     container.style = `grid-template-columns: repeat(${dimensions}, 1fr); grid-template-rows: repeat(${dimensions}, 1fr)`;
+
+    ChangeGridCellBgColourOnMouseOver(grid, "red");
   });
 };
 
