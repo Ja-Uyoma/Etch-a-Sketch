@@ -9,6 +9,10 @@
   box-sizing: inherit;
 }
 
+body {
+  width: 960px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
