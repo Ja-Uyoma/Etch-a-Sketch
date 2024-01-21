@@ -6,7 +6,7 @@ const HandleButtonClicked = () => {
     dimensions = Number(prompt("Enter the grid dimensions"));
   });
 
-  return dimensions;
+  return dimensions > 100 ? 100 : dimensions;
 };
 
 export default HandleButtonClicked;
