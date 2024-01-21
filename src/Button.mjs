@@ -1,8 +1,7 @@
 import { CreateGrid, RenderGrid } from "./Grid.mjs";
 
 /**
- * Set the number of cells of the new grid to be rendered to the DOM
- * @returns Whether the button was clicked and the number of grid cells
+ * Render a new grid to the DOM with the dimensions given in the prompt
  */
 const HandleButtonClicked = () => {
   let dimensions = 0;
