@@ -12,7 +12,7 @@ const HandleButtonClicked = () => {
 
     if (dimensions > 100) {
       dimensions = 100;
-    } else if (dimensions < 0) {
+    } else if (dimensions <= 0) {
       dimensions = 16;
     }
 
