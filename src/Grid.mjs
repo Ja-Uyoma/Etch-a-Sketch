@@ -39,4 +39,4 @@ const ChangeGridCellBgColourOnMouseOver = (gridCells, colour) => {
   });
 };
 
-export default { CreateGrid, RenderGrid, ChangeGridCellBgColourOnMouseOver };
+export { CreateGrid, RenderGrid, ChangeGridCellBgColourOnMouseOver };
