@@ -13,7 +13,7 @@ const HandleButtonClicked = () => {
     if (dimensions > 100) {
       dimensions = 100;
     } else if (dimensions < 0) {
-      dimensions = 10;
+      dimensions = 16;
     }
 
     let cells = document.querySelectorAll("div.container > div");

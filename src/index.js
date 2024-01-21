@@ -4,7 +4,7 @@ import HandleButtonClicked from "./Button.mjs";
 
 const main = () => {
   UpdateYear();
-  let grid = CreateGrid(4, 4);
+  let grid = CreateGrid(16, 16);
   ChangeGridCellBgColourOnMouseOver(grid, "red");
   RenderGrid(grid);
   HandleButtonClicked();
