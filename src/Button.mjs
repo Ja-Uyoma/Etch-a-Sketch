@@ -23,6 +23,9 @@ const HandleButtonClicked = () => {
 
     let grid = CreateGrid(dimensions, dimensions);
     RenderGrid(grid);
+
+    let container = document.querySelector("div.container");
+    container.style = `grid-template-columns: repeat(${dimensions}, 1fr); grid-template-rows: repeat(${dimensions}, 1fr)`;
   });
 };
 
