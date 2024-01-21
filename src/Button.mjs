@@ -1,3 +1,7 @@
+/**
+ * Set the number of cells of the new grid to be rendered to the DOM
+ * @returns The number of grid cells
+ */
 const HandleButtonClicked = () => {
   let dimensions = 0;
 
