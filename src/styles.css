@@ -11,8 +11,6 @@
 }
 
 body {
-  width: 960px;
-  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
