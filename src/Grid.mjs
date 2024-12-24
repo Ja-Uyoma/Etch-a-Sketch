@@ -36,9 +36,9 @@ function ChangeGridCellColourOnMouseOVer(gridCells) {
 
   gridCells.forEach((cell) => {
     cell.addEventListener("mouseover", () => {
-      const r = Math.floor(Math.random() * (255 - 0) + 0);
-      const g = Math.floor(Math.random() * (255 - 0) + 0);
-      const b = Math.floor(Math.random() * (255 - 0) + 0);
+      const r = Math.floor(Math.random() * (max - min) + min);
+      const g = Math.floor(Math.random() * (max - min) + min);
+      const b = Math.floor(Math.random() * (max - min) + min);
 
       cell.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     });
