@@ -27,19 +27,6 @@ const RenderGrid = (gridCells) => {
 };
 
 /**
- * Change the colour of a cell when a mouse hovers over it
- * @param {HTMLElement[]} gridCells An array of divs representing the grid cells
- * @param {string} colour The new background colour of the grid cells
- */
-const ChangeGridCellBgColourOnMouseOver = (gridCells, colour) => {
-  gridCells.forEach((cell) => {
-    cell.addEventListener("mouseover", () => {
-      cell.style.backgroundColor = colour;
-    });
-  });
-};
-
-/**
  * Change the colour of a grid cell when the mouse hovers over it
  * @param {HTMLElement[]} gridCells The grid
  */
@@ -58,9 +45,4 @@ function ChangeGridCellColourOnMouseOVer(gridCells) {
   });
 }
 
-export {
-  CreateGrid,
-  RenderGrid,
-  ChangeGridCellBgColourOnMouseOver,
-  ChangeGridCellColourOnMouseOVer,
-};
+export { CreateGrid, RenderGrid, ChangeGridCellColourOnMouseOVer };
