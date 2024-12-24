@@ -31,9 +31,6 @@ button {
 
 .container>div {
   border: 1px solid black;
-
-  /* This is half the width of the body (480px) divided by 100 grid cells, which is the maximum, minus the 1px border */
-  padding: calc((480px / 100) - 1px) calc((480px / 100) - 1px);
 }
 
 footer {
