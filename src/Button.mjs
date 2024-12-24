@@ -29,7 +29,7 @@ const HandleButtonClicked = () => {
     RenderGrid(grid);
 
     let container = document.querySelector("div.container");
-    container.style = `grid-template-columns: repeat(${dimensions}, 1fr); grid-template-rows: repeat(${dimensions}, 1fr)`;
+    container.style = `grid-template-columns: repeat(${dimensions}, 1em); grid-template-rows: repeat(${dimensions}, 1em)`;
 
     ChangeGridCellColourOnMouseOver(grid);
   });
