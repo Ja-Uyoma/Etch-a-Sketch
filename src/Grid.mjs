@@ -39,4 +39,28 @@ const ChangeGridCellBgColourOnMouseOver = (gridCells, colour) => {
   });
 };
 
-export { CreateGrid, RenderGrid, ChangeGridCellBgColourOnMouseOver };
+/**
+ * Change the colour of a grid cell when the mouse hovers over it
+ * @param {HTMLElement[]} gridCells The grid
+ */
+function ChangeGridCellColourOnMouseOVer(gridCells) {
+  const min = 0;
+  const max = 255;
+
+  gridCells.forEach((cell) => {
+    cell.addEventListener("mouseover", () => {
+      const r = Math.floor(Math.random() * (255 - 0) + 0);
+      const g = Math.floor(Math.random() * (255 - 0) + 0);
+      const b = Math.floor(Math.random() * (255 - 0) + 0);
+
+      cell.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    });
+  });
+}
+
+export {
+  CreateGrid,
+  RenderGrid,
+  ChangeGridCellBgColourOnMouseOver,
+  ChangeGridCellColourOnMouseOVer,
+};
