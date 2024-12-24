@@ -1,13 +1,13 @@
 import {
   CreateGrid,
   RenderGrid,
-  ChangeGridCellColourOnMouseOVer,
+  ChangeGridCellColourOnMouseOver,
 } from "./Grid.mjs";
 import HandleButtonClicked from "./Button.mjs";
 
 const main = () => {
   let grid = CreateGrid(16, 16);
-  ChangeGridCellColourOnMouseOVer(grid);
+  ChangeGridCellColourOnMouseOver(grid);
   RenderGrid(grid);
   HandleButtonClicked();
 };

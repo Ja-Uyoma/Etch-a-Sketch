@@ -30,7 +30,7 @@ const RenderGrid = (gridCells) => {
  * Change the colour of a grid cell when the mouse hovers over it
  * @param {HTMLElement[]} gridCells The grid
  */
-function ChangeGridCellColourOnMouseOVer(gridCells) {
+function ChangeGridCellColourOnMouseOver(gridCells) {
   const min = 0;
   const max = 255;
 
@@ -45,4 +45,4 @@ function ChangeGridCellColourOnMouseOVer(gridCells) {
   });
 }
 
-export { CreateGrid, RenderGrid, ChangeGridCellColourOnMouseOVer };
+export { CreateGrid, RenderGrid, ChangeGridCellColourOnMouseOver };
